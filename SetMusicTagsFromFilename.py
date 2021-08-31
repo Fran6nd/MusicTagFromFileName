@@ -7,7 +7,9 @@ import eyed3
 
 
 filename = os.fsdecode(sys.argv[1])
-if filename.endswith(".mp3"): 
+if os.path.isdir(filename):
+    pass
+elif filename.endswith(".mp3"): 
     audio = eyed3.load(sys.argv[1])
     #audio.initTag()
     filename = os.path.basename(filename)
