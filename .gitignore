@@ -1,2 +1,5 @@
 __PYTHON__
 __PYCACHE__
+eyed3
+os
+sys
